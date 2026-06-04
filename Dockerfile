@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN ./mvnw package
+RUN chmod +x mvnw && ./mvnw package
 
 EXPOSE 8080
 
